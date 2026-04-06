@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar Herramientas de Desarrollo - One Language</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+ 
+<body>
+ 
+    <!-- ================= MENU LATERAL ================= -->
+    <div class="menu">
+    <ul>
+        <li><a href="Construccion_software.html">Interpretar informe de diseño</a></li>
+        <li><a href="Herramientas_desarrollo.html">Seleccionar herramientas de desarrollo</a></li>
+        <li><a href="Configurar_herramientas.html" class="activo">Configurar herramientas de desarrollo</a></li>
+        <li><a href="#">Seleccionar herramientas de versionamiento</a></li>
+        <li><a href="#">Configurar herramientas de versionamiento</a></li>
+        <li><a href="#">Definir estándares de codificación</a></li>
+    </ul>
+</div>
+ 
+ 
+    <!-- ================= CONTENIDO ================= -->
+    <div class="Ejercicios">
+ 
+        <h1>Informe de Construcción del Software</h1>
+ 
+        <h2>Configuración de Herramientas de Desarrollo</h2>
+ 
+ 
+        <!-- ================= INTRODUCCION ================= -->
+        <section id="intro">
+ 
+            <h2>1. Introducción</h2>
+ 
+            <p>
+                El presente informe describe las herramientas seleccionadas para el desarrollo del sistema
+                de reconocimiento de señas, detallando sus características principales, así como los
+                procedimientos de instalación y configuración necesarios para su correcto funcionamiento.
+            </p>
+ 
+        </section>
+ 
+ 
+        <!-- ================= CARACTERISTICAS ================= -->
+        <section id="caracteristicas">
+ 
+            <h2>2. Características de las Herramientas</h2>
+ 
+            <h3>IDE: Visual Studio Code</h3>
+            <ul>
+                <li>Editor de código ligero y gratuito.</li>
+                <li>Compatible con múltiples lenguajes (Python, JavaScript, etc.).</li>
+                <li>Amplio soporte de extensiones.</li>
+                <li>Integración con Git.</li>
+                <li>Autocompletado inteligente (IntelliSense).</li>
+            </ul>
+ 
+            <h3>Lenguaje: Python</h3>
+            <ul>
+                <li>Lenguaje interpretado y fácil de aprender.</li>
+                <li>Amplio soporte para inteligencia artificial.</li>
+                <li>Librerías especializadas como:
+                    <ul>
+                        <li>OpenCV (visión por computadora).</li>
+                        <li>TensorFlow (machine learning).</li>
+                        <li>MediaPipe (detección de manos).</li>
+                    </ul>
+                </li>
+            </ul>
+ 
+            <h3>Frontend: React</h3>
+            <ul>
+                <li>Librería basada en componentes.</li>
+                <li>Permite interfaces dinámicas.</li>
+                <li>Renderizado rápido (Virtual DOM).</li>
+                <li>Reutilización de código.</li>
+            </ul>
+ 
+            <h3>Backend: Django</h3>
+            <ul>
+                <li>Framework robusto basado en Python.</li>
+                <li>Incluye sistema de autenticación.</li>
+                <li>Seguridad integrada.</li>
+                <li>Arquitectura MTV (Modelo - Template - Vista).</li>
+            </ul>
+ 
+            <h3>Base de Datos: PostgreSQL</h3>
+            <ul>
+                <li>Sistema relacional potente.</li>
+                <li>Soporte para grandes volúmenes de datos.</li>
+                <li>Alta seguridad y confiabilidad.</li>
+                <li>Compatible con Django.</li>
+            </ul>
+ 
+            <h3>Control de Versiones: GitHub</h3>
+            <ul>
+                <li>Almacenamiento de código en la nube.</li>
+                <li>Control de versiones.</li>
+                <li>Trabajo colaborativo.</li>
+                <li>Gestión de ramas (branching).</li>
+            </ul>
+ 
+            <h3>Modelado: Draw.io</h3>
+            <ul>
+                <li>Herramienta gratuita.</li>
+                <li>Creación de diagramas UML.</li>
+                <li>Interfaz sencilla.</li>
+                <li>Exportación en varios formatos.</li>
+            </ul>
+ 
+            <h3>Librerías IA: OpenCV / MediaPipe</h3>
+            <ul>
+                <li>Detección de imágenes en tiempo real.</li>
+                <li>Reconocimiento de manos y movimientos.</li>
+                <li>Integración con Python.</li>
+                <li>Ideal para visión por computadora.</li>
+            </ul>
+ 
+        </section>
+ 
+ 
+        <!-- ================= INSTALACION ================= -->
+        <section id="instalacion">
+ 
+            <h2>3. Instalación y Configuración</h2>
+ 
+            <h3>3.1 Visual Studio Code</h3>
+ 
+            <p><b>Instalación:</b></p>
+            <ul>
+                <li>Descargar desde la página oficial.</li>
+                <li>Ejecutar instalador.</li>
+                <li>Seguir pasos por defecto.</li>
+            </ul>
+ 
+            <p><b>Configuración:</b></p>
+            <ul>
+                <li>Instalar extensiones:
+                    <ul>
+                        <li>Python</li>
+                        <li>ES7+ React Snippets</li>
+                        <li>Prettier (formateo)</li>
+                        <li>Live Server</li>
+                    </ul>
+                </li>
+                <li>Activar auto guardado.</li>
+                <li>Activar formato automático.</li>
+                <li>Seleccionar tema (oscuro o claro).</li>
+            </ul>
+ 
+            <h3>3.2 Python</h3>
+ 
+            <p><b>Instalación:</b></p>
+            <ul>
+                <li>Descargar desde python.org.</li>
+                <li>Marcar la opción "Add Python to PATH".</li>
+                <li>Finalizar instalación.</li>
+            </ul>
+ 
+            <p><b>Verificación:</b></p>
+            <pre><code>python --version</code></pre>
+ 
+            <p><b>Programa de prueba:</b></p>
+            <pre><code>print("Hola Mundo")</code></pre>
+ 
+            <h3>3.3 React</h3>
+ 
+            <p><b>Instalación:</b></p>
+            <ul>
+                <li>Instalar Node.js.</li>
+                <li>Ejecutar:</li>
+            </ul>
+            <pre><code>npm create vite@latest</code></pre>
+            <ul>
+                <li>Seleccionar React.</li>
+                <li>Instalar dependencias:</li>
+            </ul>
+            <pre><code>npm install</code></pre>
+ 
+            <p><b>Ejecución:</b></p>
+            <pre><code>npm run dev</code></pre>
+ 
+            <h3>3.4 Django</h3>
+ 
+            <p><b>Instalación:</b></p>
+            <pre><code>pip install django</code></pre>
+ 
+            <p><b>Crear proyecto:</b></p>
+            <pre><code>django-admin startproject proyecto
+cd proyecto
+python manage.py runserver</code></pre>
+ 
+            <h3>3.5 PostgreSQL</h3>
+ 
+            <p><b>Instalación:</b></p>
+            <ul>
+                <li>Descargar desde la página oficial.</li>
+                <li>Configurar usuario y contraseña.</li>
+            </ul>
+ 
+            <p><b>Crear base de datos:</b></p>
+            <pre><code>CREATE DATABASE prueba;</code></pre>
+ 
+            <p><b>Crear tabla:</b></p>
+            <pre><code>CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(50)
+);</code></pre>
+ 
+            <h3>3.6 GitHub</h3>
+ 
+            <p><b>Configuración:</b></p>
+            <pre><code>git init
+git add .
+git commit -m "Primer commit"
+git remote add origin URL_DEL_REPO
+git push -u origin main</code></pre>
+ 
+            <h3>3.7 Draw.io</h3>
+ 
+            <ul>
+                <li>Ingresar a la herramienta online.</li>
+                <li>Crear diagramas UML.</li>
+                <li>Guardar o exportar.</li>
+            </ul>
+ 
+            <h3>3.8 OpenCV y MediaPipe</h3>
+ 
+            <p><b>Instalación:</b></p>
+            <pre><code>pip install opencv-python mediapipe</code></pre>
+ 
+            <p><b>Prueba básica:</b></p>
+            <pre><code>import cv2
+print("OpenCV funcionando")</code></pre>
+ 
+        </section>
+ 
+ 
+        <!-- ================= CONFIGURACION ENTORNO ================= -->
+        <section id="entorno">
+ 
+            <h2>4. Configuración del Entorno de Desarrollo</h2>
+ 
+            <h3>IDE</h3>
+            <ul>
+                <li>Extensiones instaladas.</li>
+                <li>Auto guardado activado.</li>
+                <li>Formato automático configurado.</li>
+            </ul>
+ 
+            <h3>Lenguaje</h3>
+            <ul>
+                <li>Python instalado y verificado.</li>
+                <li>Ejecución correcta de "Hola Mundo".</li>
+            </ul>
+ 
+            <h3>Base de Datos</h3>
+            <ul>
+                <li>Base de datos creada.</li>
+                <li>Tabla de prueba creada correctamente.</li>
+            </ul>
+ 
+        </section>
+ 
+ 
+        <!-- ================= CONCLUSION ================= -->
+        <section id="conclusion">
+ 
+            <h2>5. Conclusión</h2>
+ 
+            <p>
+                Las herramientas seleccionadas permiten desarrollar un sistema completo de reconocimiento
+                de señas, combinando tecnologías modernas de frontend, backend e inteligencia artificial.
+                Además, su correcta instalación y configuración garantiza un entorno de desarrollo eficiente,
+                escalable y listo para implementar funcionalidades avanzadas.
+            </p>
+ 
+        </section>
+ 
+    </div>
+ 
+ 
+    <!-- ================= SCRIPT ================= -->
+    <script>
+ 
+        function toggleMenu() {
+ 
+            let submenu = document.getElementById("submenuInforme");
+ 
+            if (submenu.style.display === "block") {
+                submenu.style.display = "none";
+            } else {
+                submenu.style.display = "block";
+            }
+ 
+        }
+ 
+    </script>
+ 
+</body>
+ 
+</html>
+ 
