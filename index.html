@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Construcción - One Language</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= MENU LATERAL ================= -->
+    <div class="menu">
+
+        <ul>
+
+            <li class="submenu">
+                <a href="javascript:void(0)" onclick="toggleMenu()">
+                    Interpretar informe de diseño
+                </a>
+
+                <ul class="sub-opciones" id="submenuInforme">
+                    <li><a href="#intro">1. Introducción</a></li>
+                    <li><a href="#descripcion">2. Descripción general del sistema</a></li>
+                    <li><a href="#arquitectura">3. Arquitectura del software</a></li>
+                    <li><a href="#modulos">4. Diseño de componentes</a></li>
+                    <li><a href="#uml">5. Diagramas UML</a></li>
+                    <li><a href="#bd">6. Diseño de base de datos</a></li>
+                    <li><a href="#interfaces">7. Diseño de interfaces</a></li>
+                    <li><a href="#reglas">8. Reglas de negocio</a></li>
+                    <li><a href="#seguridad">9. Seguridad del sistema</a></li>
+                    <li><a href="#tecnico">10. Especificaciones técnicas</a></li>
+                    <li><a href="#implementacion">11. Consideraciones de implementación</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Seleccionar herramientas de desarrollo</a></li>
+            <li><a href="#">Configurar herramientas de desarrollo</a></li>
+            <li><a href="#">Seleccionar herramientas de versionamiento</a></li>
+            <li><a href="#">Configurar herramientas de versionamiento</a></li>
+            <li><a href="#">Definir estándares de codificación</a></li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- ================= CONTENIDO ================= -->
+    <div class="Ejercicios">
+
+        <h1>Informe de Construcción del Software</h1>
+
+        <p>
+            <b>Aprendices</b><br>
+            Juan Pablo Gómez Perdomo<br>
+            Johan Alexander Acero Salazar
+        </p>
+
+        <p>
+            <b>Instructor</b><br>
+            José de Jesús Motta Vargas
+        </p>
+
+        <p>
+            <b>SENA – Servicio Nacional de Aprendizaje</b><br>
+            2026
+        </p>
+
+
+        <!-- ================= INTRODUCCION ================= -->
+        <section id="intro">
+
+            <h2>1. Introducción</h2>
+
+            <p>
+                El presente documento tiene como propósito describir cómo se va a construir el sistema,
+                tomando como base los requerimientos definidos en el SRS o especificación de requisitos.
+            </p>
+
+            <p>
+                La aplicación <b>One Language</b> es un sistema móvil diseñado para facilitar la comunicación
+                entre personas con discapacidad del habla y personas oyentes. Su principal función es
+                traducir la lengua de señas a texto y audio en tiempo real mediante la cámara del dispositivo,
+                utilizando tecnologías de visión por computadora e inteligencia artificial.
+            </p>
+
+            <h3>Alcance</h3>
+
+            <ul>
+                <li>Desarrollar una aplicación móvil con acceso a cámara.</li>
+                <li>Reconocimiento de un conjunto limitado de señas.</li>
+                <li>Traducción automática de las señas reconocidas a texto.</li>
+                <li>Diseñar una interfaz inclusiva y clara fácil de usar.</li>
+                <li>Conversión del texto a audio.</li>
+            </ul>
+
+            <p>
+                El alcance que se quiere lograr con este proyecto es el desarrollo de una aplicación móvil
+                y un sitio web funcional donde las personas que no tengan ninguna discapacidad logren
+                entender lo que las personas mudas expresan mediante señas.
+            </p>
+
+        </section>
+
+
+        <!-- ================= DESCRIPCION ================= -->
+        <section id="descripcion">
+
+            <h2>2. Descripción general del sistema</h2>
+
+            <p>
+                El sistema es una aplicación móvil orientada a la accesibilidad y la inclusión. Su funcionamiento
+                se basa en capturar los gestos del usuario mediante la cámara del dispositivo y convertirlos
+                automáticamente en texto y audio comprensible.
+            </p>
+
+            <p>El sistema está orientado a tres tipos de usuarios:</p>
+
+            <ul>
+                <li>Administrador</li>
+                <li>Persona con discapacidad del habla</li>
+                <li>Persona oyente</li>
+            </ul>
+
+            <p>El sistema cuenta con cuatro módulos principales:</p>
+
+            <ul>
+                <li>Registro e inicio de sesión: permite a los usuarios crear una cuenta y acceder al sistema.</li>
+                <li>Reconocimiento de señas: detecta y clasifica las señas realizadas por el usuario.</li>
+                <li>Conversión de texto a audio: transforma el texto traducido en audio comprensible.</li>
+                <li>Configuración y accesibilidad: permite personalizar la experiencia del usuario según sus necesidades.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- ================= ARQUITECTURA ================= -->
+        <section id="arquitectura">
+
+            <h2>3. Arquitectura del software</h2>
+
+            <h3>Capa de Presentación</h3>
+            <p>Interfaz del usuario, captura de cámara y visualización de la traducción.</p>
+
+            <h3>Capa de Aplicación o Lógica</h3>
+            <p>Procesa la información, controla el flujo del sistema y gestiona usuarios.</p>
+
+            <h3>Capa de Inteligencia Artificial</h3>
+            <p>Detecta las señas utilizando modelos de visión por computadora.</p>
+
+            <h3>Tecnologías</h3>
+
+            <ul>
+                <li>Python</li>
+                <li>TensorFlow</li>
+                <li>OpenCV</li>
+                <li>MediaPipe</li>
+            </ul>
+
+            <h3>Capa de Datos</h3>
+
+            <p>Base de datos que almacena usuarios, historial de traducciones y configuraciones.</p>
+
+            <p><b>Gestor:</b> PostgreSQL</p>
+
+        </section>
+
+
+        <!-- ================= MODULOS ================= -->
+        <section id="modulos">
+
+            <h2>4. Diseño de componentes o módulos</h2>
+
+            <p>
+                El sistema se organiza en los siguientes módulos funcionales:
+            </p>
+
+            <h3>1. Módulo de Autenticación</h3>
+
+            <p>
+                Este módulo permite gestionar el acceso de los usuarios al sistema mediante el registro
+                y validación de credenciales.
+            </p>
+
+            <ul>
+                <li><b>Entradas:</b> nombre, correo electrónico, contraseña y datos de registro.</li>
+                <li><b>Procesos:</b> validación de credenciales, registro de nuevos usuarios y recuperación de contraseña.</li>
+                <li><b>Salidas:</b> acceso al sistema o mensaje de error en caso de datos incorrectos.</li>
+            </ul>
+
+
+            <h3>2. Módulo de Reconocimiento de Señas</h3>
+
+            <p>
+                Este módulo se encarga de capturar los gestos realizados por el usuario y convertirlos
+                en texto mediante el uso de reconocimiento de señas.
+            </p>
+
+            <ul>
+                <li><b>Entradas:</b> video o imagen capturada desde la cámara.</li>
+                <li><b>Procesos:</b> detección de gestos, análisis del movimiento de las manos y conversión de las señas en texto.</li>
+                <li><b>Salidas:</b> texto traducido mostrado en la pantalla.</li>
+            </ul>
+
+
+            <h3>3. Módulo de Conversión a Audio</h3>
+
+            <p>
+                Este módulo transforma el texto obtenido de la traducción en audio para facilitar
+                la comunicación con personas oyentes.
+            </p>
+
+            <ul>
+                <li><b>Entradas:</b> texto generado por el módulo de reconocimiento de señas.</li>
+                <li><b>Procesos:</b> conversión de texto a voz y control de reproducción del audio.</li>
+                <li><b>Salidas:</b> audio reproducido con la traducción de la seña.</li>
+            </ul>
+
+
+            <h3>4. Módulo de Historial</h3>
+
+            <p>
+                Este módulo permite almacenar y consultar las traducciones realizadas dentro de la aplicación.
+            </p>
+
+            <ul>
+                <li><b>Entradas:</b> traducciones generadas por el sistema.</li>
+                <li><b>Procesos:</b> almacenamiento de registros, consulta, filtrado por fecha y eliminación de traducciones.</li>
+                <li><b>Salidas:</b> listado de traducciones guardadas.</li>
+            </ul>
+
+
+            <h3>5. Módulo de Accesibilidad</h3>
+
+            <p>
+                Este módulo permite adaptar la interfaz del sistema para mejorar la experiencia
+                de uso según las necesidades del usuario.
+            </p>
+
+            <ul>
+                <li><b>Entradas:</b> configuraciones seleccionadas por el usuario (tamaño de texto, colores, idioma).</li>
+                <li><b>Procesos:</b> aplicación y almacenamiento de las preferencias de accesibilidad.</li>
+                <li><b>Salidas:</b> interfaz personalizada según las configuraciones elegidas.</li>
+            </ul>
+
+
+            <h3>6. Módulo de Perfil</h3>
+
+            <p>
+                Este módulo permite al usuario gestionar su información personal y las configuraciones
+                de su cuenta dentro del sistema.
+            </p>
+
+            <ul>
+                <li><b>Entradas:</b> datos del usuario y configuraciones de la cuenta.</li>
+                <li><b>Procesos:</b> visualización y actualización del perfil, gestión de permisos y cambio de contraseña.</li>
+                <li><b>Salidas:</b> perfil actualizado o cierre de sesión del usuario.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- ================= UML ================= -->
+        <section id="uml">
+
+            <h2>5. Diagramas UML</h2>
+
+            <p>
+                Los diagramas UML permiten representar de forma visual la estructura y el comportamiento
+                del sistema, facilitando la comprensión de cómo interactúan los usuarios con las
+                diferentes funcionalidades de la aplicación.
+            </p>
+
+            <h3>Casos de uso principales</h3>
+
+            <ul>
+                <li>Registro de usuario</li>
+                <li>Inicio de sesión</li>
+                <li>Restablecer contraseña</li>
+                <li>Traducción de señas a texto y audio</li>
+                <li>Historial de traducciones</li>
+                <li>Configuración de accesibilidad</li>
+                <li>Gestión del perfil</li>
+            </ul>
+
+            <h3>Actores del sistema</h3>
+
+            <ul>
+                <li>Usuario</li>
+                <li>Administrador</li>
+            </ul>
+
+            <p>
+                Estos diagramas representan la interacción entre los usuarios y las funcionalidades
+                principales del sistema, permitiendo visualizar cómo se desarrollan los procesos
+                dentro de la aplicación.
+            </p>
+
+            <a href="https://drive.google.com/drive/folders/1-xDeF_NmRjYOZ3kRgk5PBKlTj5d1lFUG">
+                Diagramas
+            </a>
+
+        </section>
+
+
+        <!-- ================= BASE DE DATOS ================= -->
+        <section id="bd">
+
+            <h2>6. Diseño de base de datos</h2>
+
+            <p>
+                La base de datos almacenará información relacionada con los usuarios del sistema,
+                historial de traducciones, configuraciones de accesibilidad y datasets de señas.
+            </p>
+
+            <p>
+                El sistema utilizará <b>PostgreSQL</b> como gestor de base de datos.
+            </p>
+
+            <a href="https://drive.google.com/drive/folders/1uEPT5G5TPeYUHNBDupxZueplmrMEpDqd">
+                Base de datos
+            </a>
+
+        </section>
+
+
+        <!-- ================= INTERFACES ================= -->
+        <section id="interfaces">
+
+            <h2>7. Diseño de interfaces</h2>
+
+            <ul>
+                <li>Pantalla de registro de usuario</li>
+                <li>Pantalla de inicio de sesión</li>
+                <li>Pantalla de traducción en tiempo real</li>
+                <li>Conversión de texto a audio</li>
+                <li>Historial de traducciones</li>
+                <li>Configuración de accesibilidad</li>
+                <li>Perfil del usuario</li>
+                <li>Recuperación de contraseña</li>
+            </ul>
+
+        </section>
+
+
+        <!-- ================= REGLAS ================= -->
+        <section id="reglas">
+
+            <h2>8. Reglas de negocio</h2>
+
+            <ul>
+                <li>El usuario debe registrarse para utilizar la aplicación.</li>
+                <li>El correo electrónico no puede repetirse.</li>
+                <li>El sistema debe validar credenciales antes de permitir acceso.</li>
+                <li>Las traducciones deben guardarse automáticamente.</li>
+                <li>El sistema debe confirmar antes de eliminar traducciones.</li>
+                <li>Se debe verificar la contraseña actual antes de cambiarla.</li>
+                <li>Si un gesto no es reconocido, el sistema solicitará repetir la seña.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- ================= SEGURIDAD ================= -->
+        <section id="seguridad">
+
+            <h2>9. Seguridad del sistema</h2>
+
+            <ul>
+                <li>Cifrado de contraseñas.</li>
+                <li>Autenticación de usuarios.</li>
+                <li>Bloqueo de cuenta tras 5 intentos fallidos.</li>
+                <li>Protección de datos personales.</li>
+                <li>Gestión de permisos para cámara, micrófono y almacenamiento.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- ================= ESPECIFICACIONES ================= -->
+        <section id="tecnico">
+
+            <h2>10. Especificaciones técnicas</h2>
+
+            <ul>
+                <li>Sistema operativo: Android 10 o superior</li>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Backend: Python / Java</li>
+                <li>Base de datos: PostgreSQL</li>
+                <li>Control de versiones: GitHub</li>
+            </ul>
+
+        </section>
+
+
+        <!-- ================= IMPLEMENTACION ================= -->
+        <section id="implementacion">
+
+            <h2>11. Consideraciones de implementación</h2>
+
+            <ul>
+                <li>Compatibilidad con diferentes dispositivos Android.</li>
+                <li>Optimizar el consumo de batería.</li>
+                <li>Precisión mínima del 85% en reconocimiento de señas.</li>
+                <li>Latencia máxima de 5 segundos.</li>
+                <li>Arquitectura modular para facilitar mantenimiento.</li>
+                <li>Monitoreo del rendimiento del sistema.</li>
+            </ul>
+
+        </section>
+
+    </div>
+
+
+    <!-- ================= SCRIPT ================= -->
+    <script>
+
+        function toggleMenu() {
+
+            let submenu = document.getElementById("submenuInforme");
+
+            if (submenu.style.display === "block") {
+                submenu.style.display = "none";
+            } else {
+                submenu.style.display = "block";
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

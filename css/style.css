@@ -1,0 +1,182 @@
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f4f4f4;
+    display:flex;
+}
+
+
+/* =========================
+   MENU LATERAL
+========================= */
+
+.menu{
+    width:260px;
+    height:100vh;
+    background-color:#17323a;
+    position:fixed;
+    left:0;
+    top:0;
+    padding-top:20px;
+    overflow-y:auto;
+}
+
+.menu ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.menu ul li{
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.menu ul li a{
+    display:block;
+    padding:12px 20px;
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.menu ul li a:hover{
+    background-color:#1f4650;
+}
+
+
+/* =========================
+   SUBMENU
+========================= */
+
+.submenu > a{
+    font-weight:bold;
+    background-color:#10272d;
+}
+
+.sub-opciones{
+    background-color:#17323a;
+}
+
+.sub-opciones li a{
+    padding-left:35px;
+    font-size:14px;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.Ejercicios{
+    margin-left:260px;
+    padding:40px;
+    max-width:900px;
+}
+
+
+/* =========================
+   TITULOS
+========================= */
+
+h1{
+    color:#17323a;
+}
+
+h2{
+    color:#17323a;
+    border-bottom:2px solid #17323a;
+    padding-bottom:5px;
+    margin-top:40px;
+}
+
+h3{
+    margin-top:25px;
+    color:#333;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+p{
+    line-height:1.6;
+    color:#333;
+}
+
+
+/* =========================
+   LISTAS
+========================= */
+
+ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:6px;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a{
+    color:#0066cc;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width:900px){
+
+    .menu{
+        width:220px;
+    }
+
+    .Ejercicios{
+        margin-left:220px;
+        padding:25px;
+    }
+
+}
+
+@media screen and (max-width:700px){
+
+    .menu{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+
+    .Ejercicios{
+        margin-left:0;
+    }
+
+}
+
+/* ocultar submenu inicialmente */
+
+.sub-opciones{
+    display:none;
+    background:#17323a;
+}
+
+.sub-opciones li a{
+    padding-left:35px;
+    font-size:14px;
+}
+
